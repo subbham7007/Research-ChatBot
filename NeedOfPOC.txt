@@ -1,0 +1,44 @@
+Import
+
+
+
+
+
+1. Cause copying different articles is very hectic
+2. ChatGPT has a max token limit 
+3. Can look into a large set of articles/documents 
+
+
+
+
+
+Drawbacks :---
+1. Large articles may cause you more cost as Token cost from OPEN AI API key is high 
+But for the relevant cases if you can figure out the relevant chunks ,it will sace a lot of money 
+2. Semantic search is also taken in context for better search 
+
+
+Important keywords :--
+WORD EMBED 
+SENTENCE EMBED 
+VECTOR DATABASE , for faster search on database 
+
+Components :-- 
+1. Document loader 
+2. split in chuinks and store the chunks
+3. Vector database is used to store and retrieve relevant vector database for better retrieval 
+
+Flow
+
+1.Data Ingestion System 
+Web scrapper  -> OpenAI Embedding  -> Vector database (PineCone)
+
+2. ChatBot (React, streamlit)
+Interface -> Open AI Embeddings -> Vector database chunk search -> From a response based on those chunks and then give the relevant response 
+
+Necessary libraries :-- 
+1. Langchain - pip install Langchain
+
+
+Unstructures URL LOader to load the text =s from various BLOG Posts   
+2. Using TextSplitters for chunking 
